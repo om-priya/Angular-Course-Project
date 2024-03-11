@@ -1,1 +1,14 @@
-<p>shopping-list works!</p>
+<div class="mt-4 p-3">
+  <shop-shopping-edit></shop-shopping-edit>
+</div>
+<hr />
+<div>
+  <ul>
+    <a
+      href="#"
+      class="cursor-pointer p-3 block border-2"
+      *ngFor="let ingredient of ingredients"
+      >{{ ingredient.name }} ({{ ingredient.amount }})</a
+    >
+  </ul>
+</div>
